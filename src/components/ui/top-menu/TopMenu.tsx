@@ -33,9 +33,9 @@ export const TopMenu = () => {
         </Link>
         <Link
           className="m-2 p-2 rounded-lg transition-all hover:bg-gray-100"
-          href="/category/children"
+          href="/category/kid"
         >
-          Children
+          Kids
         </Link>
       </div>
 
