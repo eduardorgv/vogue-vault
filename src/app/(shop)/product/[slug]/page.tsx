@@ -1,6 +1,11 @@
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
-import { QuantitySelector, SizeSelector } from "@/components";
+import {
+  ProductMobileSlideshow,
+  ProductSlideshow,
+  QuantitySelector,
+  SizeSelector,
+} from "@/components";
 
 interface Props {
   params: {
@@ -20,7 +25,19 @@ export default function ({ params }: Props) {
     <div className="mt-5 mb-20 grid md:grid-cols-3 gap-3">
       {/* Slideshow */}
       <div className="col-span-1 md:col-span-2">
-        <h1>Slideshow</h1>
+        {/* Desktop slideshow */}
+        <ProductSlideshow
+          images={product.images}
+          title={product.title}
+          className="hidden md:block"
+        />
+
+        {/* Mobile slideshow */}
+        <ProductMobileSlideshow
+          images={product.images}
+          title={product.title}
+          className="block md:hidden"
+        />
       </div>
 
       {/* Details */}

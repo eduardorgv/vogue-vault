@@ -8,3 +8,5 @@ export * from "./ui/top-menu/TopMenu";
 
 export * from "./product/size-selector/SizeSelector";
 export * from "./product/quantity-selector/QuantitySelector";
+export * from "./product/slide-show/ProductSlideshow";
+export * from "./product/slide-show/ProductMobileSlideshow";

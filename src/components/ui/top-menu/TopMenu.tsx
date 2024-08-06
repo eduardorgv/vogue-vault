@@ -18,7 +18,7 @@ export const TopMenu = () => {
       </div>
 
       {/* Center Menu */}
-      <div className="hidden sm:block">
+      <div className="hidden md:block">
         <Link
           className="m-2 p-2 rounded-lg transition-all hover:bg-gray-100"
           href="/category/men"
